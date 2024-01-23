@@ -1,0 +1,302 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.one{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+text-align: center;
+align-items: center;
+align-self: center;
+align-content: center;
+
+}
+.one img{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  object-fit:cover;
+}
+.one h1{
+  font-weight: 400;
+  font-size: 2rem;
+
+}
+.one p{
+  font-size: 1rem;
+}
+.div-flex{
+  text-align: center;
+  justify-content: center;
+  margin-top:20px;
+}
+.text-center{
+  text-align: left;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  height:100%;
+  position:relative;
+}
+
+header p {
+  margin: 0;
+}
+header #span{
+  background-color: rgb(66, 186, 219);
+position:absolute;
+background-position: top right;
+background-size: 30% 30%;
+top:0;
+right:0;
+}
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1em;
+  display: block;
+}
+
+section {
+  margin: 2em 0;
+}
+
+section h2 {
+  text-align: center;
+
+}
+.two{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 40px;
+    margin-bottom: 40px;
+}
+section.two > p{
+font-size: 1rem;
+opacity:0.9;
+text-align: justify;
+color:#333;
+}
+main {
+    background-color: #333;
+    color:#fff;
+}
+#education {
+  margin-left: 12px;
+}
+#education p{
+  opacity:0.7;
+}
+#education .edu-child{
+  border: 0.5px solid #ddd;
+  width:400px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding:12px 14px;
+}
+#education .edu-child p > a{
+  opacity:0.7;
+  color: black;
+  text-decoration: none;
+}
+#skills {
+  width:380px;
+  margin: 10px auto;
+}
+#skills li{
+  padding:8px 10px;
+  background-color: #ddd;
+  margin-bottom:1em;
+  list-style: none;
+}
+
+.edu-child{
+    border: none;
+}
+.project {
+  margin-bottom: 2em;
+}
+
+.card-body{
+  color:#333;
+}
+.row{
+  display:flex;
+  justify-content: space-between;
+flex-direction: column;
+
+}
+.btn-primary{
+  background-color: #333;
+  padding:12px 15px;
+  border-radius: 5px;
+}
+.btn-primary:hover{
+  text-decoration: none;
+}
+#projects {
+  padding-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.row .col-md-6{
+flex:33%;
+
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+#contact{
+  text-align: center;
+}
+#contact.footerlinks {
+  background-color: rgb(20, 22, 26);
+  padding:25px;
+  margin-top: 20px;
+  width:450px;
+  margin:0 auto;
+}
+.footerlinks a{
+  color:rgb(83, 87, 94);
+padding:5px;
+font-size: 28px;
+text-align: center;
+}
+
+@media (min-width:600px){
+  .one{
+    display:flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  }
+  .one img{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    object-fit:cover;
+  }
+  .one h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+
+  }
+  .one p{
+    font-size: 1rem;
+  }
+  .div-flex{
+    margin-right: 50px;
+  }
+  .row{
+    display:flex;
+    justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+  }
+  .row .col-md-6{
+    flex:50%;
+    width:50%;
+    height:100%;
+    align-self: stretch;
+  }
+}
+@media (min-width:800px){
+  .one h1{
+    font-weight: 600;
+    font-size: 3rem;
+
+  }
+  .one p{
+    font-size: 1rem;
+  }
+  .one img{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    object-fit:cover;
+  }
+  .row{
+    display:flex;
+    justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+  }
+  .row .col-md-6{
+    flex:50%;
+    width:50%;
+    height:100%;
+    align-self: stretch;
+  }
+  #education .edu-child{
+    border: 0.5px solid #ddd;
+    width:600px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding:12px 14px;
+  }
+
+}
+@media (min-width:950px){
+  .div-flex{
+    margin-right: 140px;
+  }
+  .row{
+    display:flex;
+    justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+  }
+  .row .col-md-6{
+    flex:25%;
+    width:25%;
+    height:100%;
+    align-self: stretch;
+  }
+
+}
